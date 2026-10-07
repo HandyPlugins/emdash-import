@@ -1,0 +1,22 @@
+{
+	"$schema": "./node_modules/@emdash-cms/plugin-cli/schemas/emdash-plugin.schema.json",
+
+	"slug": "import",
+	"name": "Import",
+	"publisher": "did:plc:6kdx7jauswq2awrp3yfxbbw5",
+
+	"license": "MIT",
+	"author": { "name": "HandyPlugins", "url": "https://handyplugins.co" },
+	"security": { "email": "support@handyplugins.co" },
+	"description": "Import structured data into EmDash collections.",
+	"repo": "https://github.com/HandyPlugins/emdash-import",
+
+	// Trust contract — what runtime APIs the plugin asks for.
+	// Read collection schemas and create drafts. content:write implies
+	// content:read in EmDash's normalized trust contract. Changes between
+	// releases require a version bump and renewed host consent.
+	"capabilities": ["schema:read", "content:write"],
+	"allowedHosts": [],
+	"storage": { "jobs": { "indexes": ["startedAt", "status"] } },
+	"admin": { "pages": [{ "path": "/manage", "label": "Import", "icon": "upload" }] }
+}

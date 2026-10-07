@@ -1,0 +1,49 @@
+{
+	"name": "import",
+	"version": "0.1.0",
+	"private": true,
+	"description": "Import structured data into EmDash collections.",
+	"license": "MIT",
+	"repository": { "type": "git", "url": "https://github.com/HandyPlugins/emdash-import.git" },
+	"engines": { "node": "24.21.0", "pnpm": "11.9.0" },
+	"type": "module",
+	"packageManager": "pnpm@11.9.0",
+	"main": "dist/index.mjs",
+	"exports": {
+		".": {
+			"import": "./dist/index.mjs",
+			"types": "./dist/index.d.mts"
+		},
+		"./sandbox": "./dist/plugin.mjs"
+	},
+	"files": [
+		"dist",
+		"emdash-plugin.jsonc",
+		"README.md",
+		"LICENSE",
+		"SECURITY.md"
+	],
+	"scripts": {
+		"validate": "emdash-plugin validate",
+		"build": "emdash-plugin build",
+		"dev": "emdash-plugin dev",
+		"typecheck": "tsc --noEmit",
+		"test": "emdash-plugin validate && vitest run",
+		"bundle": "emdash-plugin bundle",
+		"login": "emdash-plugin login",
+		"publish": "emdash-plugin publish",
+		"release:setup": "emdash-plugin release setup"
+	},
+	"peerDependencies": {
+		"emdash": ">=1.2.0 <2.0.0"
+	},
+	"devDependencies": {
+		"@emdash-cms/plugin-cli": "0.13.3",
+		"@emdash-cms/plugin-test": "0.2.8",
+		"emdash": "1.2.0",
+		"typescript": "5.9.3",
+		"vite": "8.3.2",
+		"vitest": "4.1.11"
+	},
+	"dependencies": { "@emdash-cms/blocks": "1.2.0", "csv-parse": "7.0.3", "zod": "4.5.4" }
+}

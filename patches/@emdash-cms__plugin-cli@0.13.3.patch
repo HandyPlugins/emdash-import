@@ -1,0 +1,49 @@
+diff --git a/dist/index.mjs b/dist/index.mjs
+--- a/dist/index.mjs
++++ b/dist/index.mjs
+@@ -2684,6 +2684,8 @@
+ 			noExternal: [
+ 				"emdash/plugin",
+ 				"zod",
++				"zod/mini",
++				"csv-parse/browser/esm/sync",
+ 				"@emdash-cms/blocks",
+ 				"@emdash-cms/blocks/server"
+ 			],
+@@ -2849,6 +2851,8 @@
+ 			noExternal: [
+ 				"emdash/plugin",
+ 				"zod",
++				"zod/mini",
++				"csv-parse/browser/esm/sync",
+ 				"@emdash-cms/blocks",
+ 				"@emdash-cms/blocks/server"
+ 			],
+@@ -10022,5 +10026,5 @@
+ const WATCH_GLOBS = [
+-	"src/**",
++	"src",
+ 	"emdash-plugin.jsonc",
+ 	"package.json"
+ ];
+diff --git a/dist/api.mjs b/dist/api.mjs
+--- a/dist/api.mjs
++++ b/dist/api.mjs
+@@ -2544,6 +2544,8 @@
+ 			noExternal: [
+ 				"emdash/plugin",
+ 				"zod",
++				"zod/mini",
++				"csv-parse/browser/esm/sync",
+ 				"@emdash-cms/blocks",
+ 				"@emdash-cms/blocks/server"
+ 			],
+@@ -2709,6 +2711,8 @@
+ 			noExternal: [
+ 				"emdash/plugin",
+ 				"zod",
++				"zod/mini",
++				"csv-parse/browser/esm/sync",
+ 				"@emdash-cms/blocks",
+ 				"@emdash-cms/blocks/server"
+ 			],
