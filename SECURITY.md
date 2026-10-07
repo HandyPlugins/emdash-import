@@ -5,7 +5,7 @@ Include the Import and EmDash versions, reproduction steps, and the relevant
 capability configuration. Use synthetic sample data; do not send credentials,
 account sessions, personal datasets, or unredacted site logs.
 
-Import 0.1.0 is a local release candidate. It uses sandbox isolation and requests
+Import 0.1.0 uses sandbox isolation and requests
 only schema read and content write. Source data is untrusted and is never
 executed as code. History stores bounded metadata and safe errors, not datasets.
 The source remains in the active admin form and is processed by the site host.

@@ -179,8 +179,9 @@ Version is read from `package.json`. Trust-contract changes require a version
 bump. The publisher DID matches HandyPlugins' existing Automations publisher;
 the registry identity is `@handyplugins.co/import`, independent of the local npm
 package name. Source repository: <https://github.com/HandyPlugins/emdash-import>.
-This candidate has not been published. Package-profile authorization and the
-actual release require a separate review.
+Version 0.1.0 is published at
+<https://plugins.emdashcms.com/plugins/@handyplugins.co/import>. Install it from
+the EmDash admin Registry on a sandbox-enabled site running EmDash 1.2.x.
 
 ## License and bundled dependencies
 
