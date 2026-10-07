@@ -181,3 +181,36 @@ the registry identity is `@handyplugins.co/import`, independent of the local npm
 package name. Source repository: <https://github.com/HandyPlugins/emdash-import>.
 This candidate has not been published. Package-profile authorization and the
 actual release require a separate review.
+
+## License and bundled dependencies
+
+Import is licensed under MIT. The registry bundle includes code from
+`@emdash-cms/blocks` 1.2.0, `csv-parse` 7.0.3, and Zod Mini from `zod` 4.5.4,
+also licensed under MIT. The following notices apply to their respective code:
+
+```text
+MIT License
+
+Import: Copyright (c) 2026 HandyPlugins
+@emdash-cms/blocks: Copyright 2026 Cloudflare Inc.
+csv-parse: Copyright (c) 2010 Adaltas
+zod: Copyright (c) 2025 Colin McDonnell
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+```

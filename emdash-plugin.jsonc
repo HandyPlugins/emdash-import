@@ -9,7 +9,16 @@
 	"author": { "name": "HandyPlugins", "url": "https://handyplugins.co" },
 	"security": { "email": "support@handyplugins.co" },
 	"description": "Import structured data into EmDash collections.",
+	"keywords": ["import", "csv", "json", "collections", "data"],
+	"sections": {
+		"description": "Paste CSV or a flat JSON array, choose an EmDash collection, map fields, and preview the result before creating drafts. Supports text, numbers, integers, booleans, dates, and configured scalar choices. Invalid rows are skipped and a bounded import history shows counts and issues. Version 0.1.0 supports up to 100 rows, 30 source fields, and 48 KiB of pasted data. File uploads and updates to existing content are not included in this release.",
+		"installation": "Requires EmDash >=1.2.0 <2.0.0 with a configured plugin sandbox and storage. Install @handyplugins.co/import from Registry, review its collection-read and draft-write permissions, then open Import under Plugins. No sample content is created during installation.",
+		"faq": "Does installation create sample content? No. Does preview write content? No; draft creation requires confirmation. Can it update or publish existing entries? No; this version creates new drafts only. Can it import files directly? This version accepts pasted CSV and JSON.",
+		"changelog": "0.1.0: Initial release with CSV and JSON parsing, collection field mapping, validated previews, confirmed draft creation, and bounded import history.",
+		"security": { "file": "./SECURITY.md" }
+	},
 	"repo": "https://github.com/HandyPlugins/emdash-import",
+	"release": { "requires": { "env:emdash": ">=1.2.0 <2.0.0" } },
 
 	// Trust contract — what runtime APIs the plugin asks for.
 	// Read collection schemas and create drafts. content:write implies
