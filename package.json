@@ -41,7 +41,7 @@
 		"@emdash-cms/plugin-cli": "0.13.3",
 		"@emdash-cms/plugin-test": "0.2.8",
 		"emdash": "1.2.0",
-		"typescript": "5.9.3",
+		"typescript": "7.0.2",
 		"vite": "8.3.2",
 		"vitest": "4.1.11"
 	},
