@@ -42,7 +42,7 @@
 		"@emdash-cms/plugin-test": "0.2.8",
 		"emdash": "1.2.0",
 		"typescript": "7.0.2",
-		"vite": "8.3.2",
+		"vite": "8.3.3",
 		"vitest": "4.1.11"
 	},
 	"dependencies": { "@emdash-cms/blocks": "1.2.0", "csv-parse": "7.0.3", "zod": "4.5.4" }
